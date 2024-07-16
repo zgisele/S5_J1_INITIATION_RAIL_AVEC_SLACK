@@ -1,0 +1,22 @@
+<!-- views/new_gossip.erb -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nouveau Gossip</title>
+</head>
+<body>
+
+    <h1>Créer un nouveau Gossip</h1>
+    <form action="/gossips/new" method="post">
+        <label for="gossip_author">Auteur:</label>
+        <input type="text" id="gossip_author" name="gossip_author">
+        <br>
+        <br>
+        <label for="gossip_content">Contenu:</label>
+        <textarea id="gossip_content" name="gossip_content"></textarea>
+        <br>
+        <input type="submit" value="Créer">
+    </form>
+</body>
+</html>
